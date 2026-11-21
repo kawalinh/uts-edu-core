@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-sans: "Public Sans", "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-gentelella-navy: #2A3F54;
+  --color-gentelella-navy-dark: #172D44;
+  --color-gentelella-navy-hover: #35495D;
+  --color-gentelella-teal: #1ABB9C;
+  --color-gentelella-teal-dark: #169F85;
+  --color-gentelella-canvas: #F7F7F7;
+  --color-gentelella-border: #E6E9ED;
+  --color-gentelella-muted: #73879C;
+  --color-gentelella-topbar: #EDEDED;
+  --color-gentelella-blue: #3498DB;
+  --color-gentelella-amber: #F39C12;
+  --color-gentelella-red: #E74C3C;
+  --color-gentelella-purple: #9B59B6;
+}
+
+@layer base {
+  html, body {
+    font-family: var(--font-sans);
+    background-color: #F7F7F7;
+    color: #2A3F54;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Gentelella classic x_panel & x_title fidelity */
+.x_panel {
+  background-color: #FFFFFF;
+  border: 1px solid #E6E9ED;
+  border-radius: 3px;
+}
+
+.x_title {
+  border-bottom: 2px solid #E6E9ED;
+  padding: 12px 18px;
+}
+
+.x_content {
+  padding: 18px;
+}
+
+/* Custom subtle scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+@media print {
+  aside, header, .no-print {
+    display: none !important;
+  }
+  main {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #FFFFFF !important;
+  }
+  .x_panel {
+    border: none !important;
+    box-shadow: none !important;
+  }
+}

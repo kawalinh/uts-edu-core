@@ -1,0 +1,8 @@
+{
+  "name": "UTS EduCore — Hệ thống Quản lý Thời khóa biểu Đại học Tổng quát",
+  "description": "Nền tảng quản trị đào tạo, lập lịch trực quan kiểm soát xung đột thời gian thực, phê duyệt biến động đa cấp, báo cáo KPI giảng đường và trợ lý di động chuẩn Gentelella.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
